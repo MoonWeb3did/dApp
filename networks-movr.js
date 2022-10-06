@@ -1,16 +1,16 @@
 const networks = [
 		{
-			"chainName":"Moonbeam",
+			"chainName":"Moonriver",
 			"chain": "moon",
-			"chainId": 1284,
+			"chainId": 1285,
 			"shortName": "moon",
-			"networkId": 1284,
-			"nativeCurrency":{"name":"GLMR","symbol":"GLMR","decimals":18},
-			"rpcUrls": ["https://rpc.api.moonbeam.network"],
-			"blockExplorerUrls": ["https://moonscan.io/"],
-			"contactAddress": "0x819B997a2f711eC1Ee998cB2DF5a6B2c4be1B575",
-			"tld": ".moon", 
-			"logo": "/images/cryptologo/moonbeam.svg",
+			"networkId": 1285,
+			"nativeCurrency":{"name":"MOVR","symbol":"MOVR","decimals":18},
+			"rpcUrls": ["https://rpc.api.moonriver.moonbeam.network"],
+			"blockExplorerUrls": ["https://moonriver.moonscan.io/"],
+			"contactAddress": "0xa1019535e6b364523949eaf45f4b17521c1cb074",
+			"tld": ".movr", 
+			"logo": "/images/cryptologo/moonriver.svg",
 			"baseUri" : "https://app.moons.money/api/nftdomains/metadata/",
 			"visible" : true
 		}

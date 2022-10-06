@@ -32,7 +32,7 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-lazy@1.7.11/jquery.lazy.min.js"></script>
 <script type="text/javascript" src="/lib/jQuery/PluginStack/Wow-js/wow.min.js"></script>
 <script type="text/javascript" src="/js/custom-01.js?v=2"></script>
-<script type="text/javascript" src="/networks.js?v=10"></script>
+<script type="text/javascript" src="/networks-movr.js?v=20"></script>
 <script type="text/javascript" src="/contract/abi.js?v=20"></script>
 <link rel="icon" href="/favicon/favicon-96x96.png?v=1" />
 <link rel="shortcut icon" href="/favicon/favicon-96x96.png?v=1" />
@@ -498,8 +498,8 @@ div[data-notify="container"] {
 					<div class="menu-close"><i class="fal fa-times-circle"></i></div>
 					<ul class="nav">
 						<li class="nav-item"><a href="/">Home</a></li>
-						<li class="nav-item active"><a href="/app">Launch Moonbeam App</a></li>
-						<li class="nav-item"><a href="/movr">Launch Moonriver App</a></li>
+						<li class="nav-item"><a href="/app">Launch Moonbeam App</a></li>
+						<li class="nav-item active"><a href="/movr">Launch Moonriver App</a></li>
 					</ul>
 				</div>
 			</div>
@@ -524,14 +524,14 @@ div[data-notify="container"] {
 	<div class="warp-search">
 		<div class="banner-nofix">
 			<div class="container">
-				<div class="menu-btn" style="margin-bottom: 20px;">
+				<div class="" style="margin-bottom: 20px;">
 						<span class="dropdown select-chain" style='display:none;'>
 							<span class="dropdown-toggle" data-toggle="dropdown" href="#"><span class='selected-chain'>Select Chain</span></span>
 							<ul class="dropdown-menu">
 							</ul>
 						</span>
 						<span class="btn btn-lg btn-custom btn-big btn-connect-wallet" style="cursor:pointer; text-transform:none;">
-							<i class="fas fa-spinner fa-spin" style="display:none;margin-right:5px;"></i> Connect Wallet (Moonbeam)
+							<i class="fas fa-spinner fa-spin" style="display:none;margin-right:5px;"></i> Connect Wallet (Moonriver)
 						</span>
 						<input type="hidden" class="currentAddress" />
 				</div>
@@ -641,7 +641,7 @@ div[data-notify="container"] {
 								<select class="form-control ddl-tlds" style="margin: 5px;">
 										<option value=''>- Top Level Domain -</option>
 										<option value='moon'>.moon</option>
-										<option value='glmr'>.glmr</option>
+										<option value='glmr'>.movr</option>
 								</select>
 								<span style="cursor:pointer; margin: 5px;" class='btn btn-sm btn-outline-success btn-mydomain-search'>Search</span>
 								<span style="cursor:pointer; margin: 5px;" class='btn btn-sm btn-outline-success btn-mydomain-refresh'>Refresh</span>
@@ -822,7 +822,7 @@ div[data-notify="container"] {
 		
 		$('.btn-connect-wallet').attr('disabled', true);
 		
-		var chainId = 1284;
+		var chainId = 1285;
 		
 		if (adapter == 'metamask')
 		{
@@ -854,7 +854,7 @@ div[data-notify="container"] {
 			var WalletConnectProvider = window.WalletConnectProvider.default;
 			connector = new WalletConnectProvider({
 				  rpc: {
-					1284: "https://rpc.api.moonbeam.network"
+					1285: "https://rpc.api.moonriver.moonbeam.network"
 				  },
 				  qrcodeModalOptions: {
 				  }
@@ -1341,7 +1341,7 @@ div[data-notify="container"] {
 		
 		var isBuy = false;
 		
-		var tlds = [".moon",".glmr"];
+		var tlds = [".movr"];
 		
 		var temp = '';
 		
